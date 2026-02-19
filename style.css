@@ -1,0 +1,216 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fafc;
+    color: #1e2a38;
+    line-height: 1.7;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.light-section {
+    background: #eef2f7;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #1b2c45;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #1b2c45;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1e2a38;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #b08d57; /* soft gold */
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255,255,255,0.85),
+        rgba(255,255,255,0.85)
+    ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #1b2c45;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    color: #b08d57;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #4a5a6a;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    background: #1b2c45;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #b08d57;
+}
+
+/* ================= CARDS ================= */
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card span {
+    display: block;
+    font-size: 14px;
+    color: #6c7a89;
+    margin-bottom: 10px;
+}
+
+/* ================= SKILLS ================= */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.skill-box:hover {
+    background: #1b2c45;
+    color: white;
+}
+
+/* ================= CONTACT ================= */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #dfe6ee;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #b08d57;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #1b2c45;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+}
