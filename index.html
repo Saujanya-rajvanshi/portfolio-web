@@ -2,170 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Saujanya | portfolio-web </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Saujanya | Projects</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo">SAUJANYA</div>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Work</a></li>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+        <div class="logo">SAUJANYA</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-</header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Designing with Purpose & Precision</h1>
-        <h2>Saujanya</h2>
-        <p>Data Structures & Algorithms Enthusiast | Frontend Web Developer | Visual Storyteller</p>
-    </div>
-</section>
+    <!-- ================= HERO ================= -->
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>My Projects</h1>
+
+            <p>
+                A collection of software projects focused on
+                solving real-world problems through thoughtful
+                design and efficient development.
+            </p>
+
+            <a href="#projects" class="btn">Explore Projects</a>
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects">
+
+        <h2>Featured Projects</h2>
+
+        <div class="project-grid">
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <img src="images/postopcare.png" alt="PostOpCare">
+
+                <div class="project-content">
+                    <h3>PostOpCare</h3>
+
+                    <p>
+                        Post-operative patient recovery tracker with
+                        glucose monitoring, insulin records and analytics.
+                    </p>
+
+                    <div class="tech">
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                        <span>Chart.js</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://potfolio-sigma-nine.vercel.app/" target="_blank">Live</a>
+                        <a href="https://github.com/Saujanya-rajvanshi/PostOpCare" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+                <img src="images/portfolio.png" alt="Portfolio">
+
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+
+                    <p>
+                        Responsive personal portfolio with glassmorphism,
+                        animations and modern UI.
+                    </p>
+
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://post-op-care-swart.vercel.app/" target="_blank">Live</a>
+                        <a href="https://github.com/Saujanya-rajvanshi/Potfolio" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Let's Connect</h2>
+
         <p>
-            Motivated Computer Science undergraduate with strong foundations in Data Structures, Algorithms, DBMS,
-            and Web Development. Skilled in building full-stack applications and consistently practicing coding problems
-            to strengthen problem-solving abilities. Passionate about software development and continuous learning.
-            Seeking an internship or entry-level software developer role to apply technical knowledge in real-world
-            projects and contribute effectively to a development team
+            Feel free to explore my work or connect with me through GitHub and LinkedIn.
         </p>
-    </div>
-</section>
 
-<!-- EDUCATION -->
-<section id="education" class="section light-section">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-
-        <div class="card">
-            <h3>Bachelor’s Degree</h3>
-            <span>2024 – 2028</span>
-            <p>BTECH Computer Science Engineering</p>
+        <div class="contact-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Portfolio</a>
         </div>
 
-        <div class="card">
-            <h3>CBSE high school, intermediate</h3>
-            <span>2022 – 2024</span>
-            <p>Recognized for outstanding participation and achievements in diverse extracurricular activities throughout schooling.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <div class="container">
-        <h2 class="section-title">Core Skills</h2>
+    <script src="script.js"></script>
 
-        <div class="skills-grid">
-
-            <a href="https://github.com/Saujanya-rajvanshi/DSA" target="_blank" class="skill-box">Data Structures & Algorithms</a>
-            <a href="https://github.com/Saujanya-rajvanshi/Striver" target="_blank" class="skill-box">Problem Solving/pattern recognization</a>
-            <a href="https://github.com/Saujanya-rajvanshi/LANGUAGE" target="_blank" class="skill-box">Core programming languages</a>
-            <a href="https://github.com/Saujanya-rajvanshi/web-devlopment-" target="_blank" class="skill-box">web devlopment</a>
-            <a href="https://github.com/Saujanya-rajvanshi/THEORY?tab=readme-ov-file#Oops" target="_blank" class="skill-box">OOPS</a>
-            <a href="https://github.com/Saujanya-rajvanshi/THEORY?tab=readme-ov-file#DBMS" target="_blank" class="skill-box">Database Management (DBMS)</a>
-            <a href="https://github.com/Saujanya-rajvanshi/THEORY?tab=readme-ov-file#OS" target="_blank" class="skill-box">Operating System</a>
-            <a href="https://github.com/Saujanya-rajvanshi/THEORY?tab=readme-ov-file#CN" target="_blank" class="skill-box">Computer Network</a>
-            <a href="https://github.com/Saujanya-rajvanshi/communication-" target="_blank" class="skill-box">Communication</a>
-        </div>
-    </div>
-</section>
-
-<!-- WORK -->
-<section id="experience" class="section light-section">
-    <div class="container">
-        <h2 class="section-title">Work</h2>
-
-        <div class="card">
-            <h3>Git & github</h3>
-            <span>2024 – present</span>
-            <p>
-                Applied Git & <a href="https://github.com/Saujanya-rajvanshi" target="_blank">
-                  Github
-                </a> for version control while building DSA projects, strengthening core CS theory (OS, DBMS, CN, OOPS), programming in C++ & JavaScript, and developing responsive web applications
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>leetcode</h3>
-            <span>2026 – present</span>
-            <p>
-                Actively solving Data Structures & Algorithms problems on <a href="https://leetcode.com/u/saujanya_rajvanshi/" target="_blank">
-                  LeetCode
-                </a>  to strengthen problem-solving skills and optimize time–space complexity.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Linked in</h3>
-            <span>2024 – present</span>
-            <p>
-                Actively building a professional network on <a href="https://www.linkedin.com/in/saujanya-rajvanshi-934220316/" target="_blank">
-                  LinkedIn
-                </a> sharing insights on DSA, web development, and continuous learning in computer science.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Web Devlopment</h3>
-            <p>Designed and developed a responsive full-stack portfolio website using HTML, CSS, JavaScript , push and commits done on github and deployed it on Vercel.
-            <ul>my first website to solve the problem of my sister's getting clients.
-                <ul>▪️<a href="https://github.com/Saujanya-rajvanshi/beautician-frontend-clean" target="_blank">beutician GitHub Repository</a></ul>
-                <ul>▪️<a href="https://beautician-frontend-clean.vercel.app/" target="_blank">beutician Live website</a></ul>
-            </ul>
-            <ul>my second website     
-                <ul>▪️<a href="https://github.com/Saujanya-rajvanshi/portfolio-web" target="_blank">portfolio GitHub Repository</a></ul>
-                <ul>▪️<a href="https://beautician-frontend-clean.vercel.app/" target="_blank">portfolio Live website</a></ul>
-            </p>
-        </div>
-        
-        <div class="card">
-            <h3>HackerRank</h3>
-            <span>2024 – present</span>
-            <p>
-                Actively practicing Data Structures and Algorithms on
-                <a href="https://www.linkedin.com/in/saujanya-rajvanshi-934220316/" target="_blank">HackerRank</a>
-                sharing insights on DSA, web development, and continuous learning in computer science.
-            </p>
-        </div>
-
-
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2 class="section-title">Let’s Work Together</h2>
-
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </div>
-</section>
-
-<footer class="footer">
-    <p>© 2026 Saujanya | Portfolio Website</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
